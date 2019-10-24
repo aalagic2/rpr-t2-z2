@@ -40,13 +40,13 @@ class IntervalTest {
         Interval i = new Interval();
         assertTrue(i.isNull());
     }
-/*
+
     @org.junit.jupiter.api.Test
     void toString2() {
         Interval i = new Interval();
         assertEquals("()", i.toString());
     }
-
+/*
     @org.junit.jupiter.api.Test
     void intersect() {
         Interval i = new Interval(1.1, 2.5, true, false);

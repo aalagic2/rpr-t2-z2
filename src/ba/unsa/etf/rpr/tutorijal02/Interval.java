@@ -24,4 +24,18 @@ public class Interval {
         if (t>=t1 && t<=t2) return true;
         return false;
     }
+    //public boolean intersect (Interval i) {
+    @Override
+    public String toString () {
+        String s="";
+        if (this.isNull()==true) return "()";
+        if (pripada_t1==true) s+="[";
+        else s+="(";
+        s+=t1+","+t2;
+        if (pripada_t2==true) s+="]";
+        else s+=")";
+        return s;
+
+    }
+
 }
